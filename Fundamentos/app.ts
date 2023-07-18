@@ -1,13 +1,9 @@
 const array: Array<number> = [1, 2, 3, 4];
 
-const stringArray: string[] = ['a', 'b', 'c'];
+array.map(num => {
+  if(num > 2 && num % 2 === 0) {
+    console.log(num * 2)
+  }
+})
 
-console.log('Original: ', array);
-
-array.push(5);
-
-console.log('Novo: ', array);
-
-array.pop();
-
-console.log('Retirado: ', array)
+// array.map(num => console.log(num))

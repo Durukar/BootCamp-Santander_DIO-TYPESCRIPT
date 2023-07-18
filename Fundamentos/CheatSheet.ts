@@ -67,3 +67,39 @@ const user = 'admin';
 validateUser(user);
 validateUser('student');
 validateUser('viewer');
+
+// Laços de repetiçao
+
+//for
+
+// for(let i=0; i <= 5; i++) {
+//   console.log(i)
+// }
+
+let n = 2;
+while(n < 6) {
+  console.log(n);
+  n++;
+}
+
+// Array
+
+// const array: Array<number> = [1, 2, 3, 4];
+
+// const stringArray: string[] = ['a', 'b', 'c'];
+
+// console.log('Original: ', array);
+
+// array.push(5);
+
+// console.log('Novo: ', array);
+
+// array.pop();
+
+// console.log('Retirado: ', array)
+
+// FIND
+
+// const buscaNum = array.find(num => num > 1);
+
+// console.log(buscaNum);

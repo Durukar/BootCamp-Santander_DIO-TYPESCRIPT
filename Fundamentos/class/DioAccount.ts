@@ -1,6 +1,6 @@
 export abstract class DioAccount {
   private name: string;
-  private accountNumber: number;
+  private readonly accountNumber: number;
   private balance: number = 0;
   private status: boolean = false;
 

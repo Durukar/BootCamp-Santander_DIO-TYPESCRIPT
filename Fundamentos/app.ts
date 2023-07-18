@@ -1,11 +1,13 @@
-//for
+const array: Array<number> = [1, 2, 3, 4];
 
-// for(let i=0; i <= 5; i++) {
-//   console.log(i)
-// }
+const stringArray: string[] = ['a', 'b', 'c'];
 
-let n = 2;
-while(n < 6) {
-  console.log(n);
-  n++;
-}
+console.log('Original: ', array);
+
+array.push(5);
+
+console.log('Novo: ', array);
+
+array.pop();
+
+console.log('Retirado: ', array)

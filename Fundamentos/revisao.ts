@@ -33,3 +33,17 @@ console.log(validateUserRoleAcess(lucasDavila.roleAcess.admin))
 //     console.log('Você nao tem role especificada, consulte o administrador do sitema para lhe auxiliar.')
 //   }
 // }
+
+// Laços de repetiçao
+
+//for
+
+// for(let i=0; i <= 5; i++) {
+//   console.log(i)
+// }
+
+let n = 2;
+while(n < 6) {
+  console.log(n);
+  n++;
+}

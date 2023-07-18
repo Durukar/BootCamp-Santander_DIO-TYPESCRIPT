@@ -2,6 +2,7 @@ export abstract class DioAccount {
   private name: string;
   private accountNumber: number;
   private balance: number = 0;
+  private status: boolean = false;
 
   constructor(name: string, accountNumber: number){
     this.name = name;
@@ -9,23 +10,33 @@ export abstract class DioAccount {
     console.log(`Conta criada.`)
   }
 
-  getName = () => {
+  public getName = () => {
     return this.name;
   }
-  getAccountNumber = () => {
+  public getAccountNumber = () => {
     return this.accountNumber;
   }
 
-  getBalance = () => {
+  public getBalance = () => {
     return this.balance;
   }
 
   // Methods
-  deposit = (value:number): void => {
-    console.log(`Depositado ${value} na sua conta`)
+  public deposit = (value:number): void => {
+    if(this.validateStatus()) {
+      console.log(`Depositado ${value} na sua conta`)
+    }
   }
 
-  withdraw = (value:number): void => {
+  public withdraw = (value:number): void => {
     console.log(`Retirado ${value} da sua conta`)
+  }
+
+  private validateStatus = (): boolean => {
+    if(this.status) {
+      return this.status
+    }
+
+    throw new Error('Account crakelad');
   }
 }

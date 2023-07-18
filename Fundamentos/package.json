@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"ts-node-dev app.ts",
+    "app":"clear && ts-node-dev app.ts",
+    "revisao":"clear && ts-node-dev revisao.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -62,11 +62,11 @@ function validateUser(user: string) {
   console.log(typeUser[user as keyof typeof typeUser]);
 };
 
-const user = 'admin';
+//const user = 'admin';
 
-validateUser(user);
-validateUser('student');
-validateUser('viewer');
+// validateUser(user);
+// validateUser('student');
+// validateUser('viewer');
 
 // Laços de repetiçao
 
@@ -103,3 +103,15 @@ while(n < 6) {
 // const buscaNum = array.find(num => num > 1);
 
 // console.log(buscaNum);
+
+// ForEach MAP
+
+const array: Array<number> = [1, 2, 3, 4];
+
+array.map(num => {
+  if(num > 2 && num % 2 === 0) {
+    console.log(num * 2)
+  }
+})
+
+// array.map(num => console.log(num))
